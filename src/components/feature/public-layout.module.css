@@ -1,0 +1,22 @@
+.publicLayout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.publicLayoutMain {
+  padding: 20px;
+  max-width: 840px;
+  width: 100%;
+  margin: 0 auto;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+
+.publicLayoutHeading {
+  font-size: var(--font-size-x-large);
+  line-height: var(--line-height-x-large);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 24px;
+}

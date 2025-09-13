@@ -1,0 +1,165 @@
+/* Button Base Styles */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-medium);
+  font-family: inherit;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-medium);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Primary Variant (Blue) */
+.primary {
+  color: white;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.primary:hover:not(:disabled) {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--ring-primary);
+}
+
+.primary:focus:not(:disabled) {
+  box-shadow: 0 0 0 3px var(--ring-primary);
+}
+
+.primary:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px var(--ring-primary);
+}
+
+.primary:disabled {
+  background-color: var(--bg-disabled);
+  border-color: var(--border-disabled);
+  color: var(--text-disabled);
+}
+
+/* Secondary Variant (Neutral) */
+.secondary {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  border-color: var(--border-primary);
+}
+
+.secondary:hover:not(:disabled) {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.secondary:focus:not(:disabled) {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px var(--ring-primary);
+}
+
+.secondary:active:not(:disabled) {
+  transform: translateY(0);
+  background-color: var(--bg-secondary);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.secondary:disabled {
+  background-color: var(--bg-disabled);
+  border-color: var(--border-disabled);
+  color: var(--text-disabled);
+}
+
+/* Negative Variant (Red for delete actions) */
+.negative {
+  color: white;
+  background-color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.negative:hover:not(:disabled) {
+  background-color: var(--color-error-light);
+  border-color: var(--color-error-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--ring-error);
+}
+
+.negative:focus:not(:disabled) {
+  box-shadow: 0 0 0 3px var(--ring-error);
+}
+
+.negative:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px var(--ring-error);
+}
+
+.negative:disabled {
+  background-color: var(--bg-disabled);
+  border-color: var(--border-disabled);
+  color: var(--text-disabled);
+}
+
+/* Danger Variant (Red for dangerous actions) */
+.danger {
+  color: white;
+  background-color: #dc2626;
+  border-color: #dc2626;
+}
+
+.danger:hover:not(:disabled) {
+  background-color: #b91c1c;
+  border-color: #b91c1c;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.25);
+}
+
+.danger:focus:not(:disabled) {
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.25);
+}
+
+.danger:active:not(:disabled) {
+  transform: translateY(0);
+  background-color: #991b1b;
+  box-shadow: 0 2px 6px rgba(220, 38, 38, 0.15);
+}
+
+.danger:disabled {
+  background-color: var(--bg-disabled);
+  border-color: var(--border-disabled);
+  color: var(--text-disabled);
+}
+
+/* Size variants */
+.button.small {
+  padding: 8px 16px;
+  font-size: var(--font-size-small);
+  min-height: 24px;
+}
+
+.button.large {
+  padding: 16px 32px;
+  font-size: var(--font-size-large);
+  min-height: 40px;
+}
+
+.button.medium {
+  padding: 12px 24px;
+  font-size: var(--font-size-medium);
+  min-height: 32px;
+}
+
+/* Full width variant */
+.button.fullWidth {
+  width: 100%;
+}

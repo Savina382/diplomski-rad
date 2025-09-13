@@ -1,0 +1,12 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-start;
+}
+
+.error {
+  color: var(--color-error);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+}

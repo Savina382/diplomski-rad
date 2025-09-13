@@ -1,0 +1,61 @@
+/* Select Input Styles */
+.selectInput {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  border: 2px solid var(--border-primary);
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  cursor: pointer;
+  appearance: none;
+  padding-right: 40px;
+}
+
+.selectInput:hover {
+  border-color: var(--border-hover);
+}
+
+.selectInput:focus {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px var(--ring-primary);
+}
+
+.selectInput:disabled {
+  background-color: var(--bg-disabled);
+  color: var(--text-disabled);
+  border-color: var(--border-disabled);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Error state */
+.selectInput.hasError {
+  border-color: var(--color-error);
+  background-color: var(--bg-error);
+}
+
+.selectInput.hasError:focus {
+  border-color: var(--color-error);
+  box-shadow: 0 0 0 3px var(--ring-error);
+}
+
+/* Option styling */
+.selectInput option {
+  padding: 8px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.selectInput option:disabled {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+
+

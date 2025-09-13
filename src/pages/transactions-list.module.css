@@ -1,0 +1,13 @@
+.transactionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-start;
+}
+
+.form {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: flex-end;
+}

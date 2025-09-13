@@ -1,0 +1,8 @@
+.localLink {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.localLink:hover {
+  text-decoration: underline;
+}
