@@ -1,12 +1,14 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Personal Finance ManagementApp
+Undergraduate Thesis: Information Technology Engineer
+Project Overview:
+This application was developed as the centerpiece of my thesis, focusing on helping individuals plan, monitor, and control their finances. It provides a simple and efficient way to gain insight into financial status through a modern user interface.
+ Key Features:
+ User Authentication: Secure login and registration system for personal data protection.
+ Transaction Management: Users can create, search, filter, and delete income and expense records.
+ Data Visualization: Financial flows are represented through different types of interactive charts for better analysis.
+ Client-side Persistence: Utilization of LocalStorage to ensure data remains available across sessions without an external database.
+ Technical Stack:
+ Frontend: React (Functional Components, Hooks), JavaScript (ES6+).
+ Styling: CSS Modules for modular and conflict-free styling.
+ Build Tool: Vite for optimized development performance.
+ Version Control: Git & GitHub.
